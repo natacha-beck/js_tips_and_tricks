@@ -222,28 +222,28 @@ var [first, second, ...tail] = ar1;
 // ar1    = [1, 2, 3, 4, 5] (stays unchanged)
 // first  = 1 (number)
 // second = 2 (number)
-// tails  = [3, 4, 5] (array)
+// tail   = [3, 4, 5] (array)
 
 // Loop otimsation
 
-for (var i = 0; i < array.lenght; i += 1 ) {
+for (var i = 0; i < array.length; i += 1 ) {
   // do something
 }
 
-for (var i = 0, l = array.lenght; i < l; i += 1 ) {
+for (var i = 0, l = array.length; i < l; i += 1 ) {
   // do something
 }
 
-for (var i = array.lenght -1; i >= 0 ; i -= 1 ) {
+for (var i = array.length -1; i >= 0 ; i -= 1 ) {
   // do something
 }
 
-for (var i = array.lenght -1; i >= 0 ; i -= 1 ) {
+for (var i = array.length -1; i >= 0 ; i -= 1 ) {
   var element = document.createElement("li");
 }
 
 var element = undefined;
-for (var i = array.lenght -1; i >= 0 ; i -= 1 ) {
+for (var i = array.length -1; i >= 0 ; i -= 1 ) {
   element = document.createElement("li");
 }
 
