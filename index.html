@@ -3,10 +3,11 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="img/favicon.ico" rel="NaN icon">
 
-    <title>XXXX</title>
+    <title>JavaScript Tips and Tricks</title>
 
-    <meta name="description" content="XXXX">
+    <meta name="description" content="JavaScript Tips and Tricks">
     <meta name="author" content="Natacha Beck">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -46,16 +47,265 @@
 
         <!-- 1st slide-->
         <section>
-          <h2>XXX</h2>
+          <h2>JavaScript Tips and Tricks</h2>
           <p>
             <small><a href="https://github.com/natacha-beck/">Natacha Beck</a></small>
           </p>
         </section>
 
+
+
         <section>
-          <h3></h3>
+          <section>
+            <h3>History</h3>
+            <ul>
+              <li>Originally named JavaScript</li>
+              <li>Netscape submitted JavaScript to ECMA International for Standardization</li>
+              <li>Result as a new language standard: ECMAScript</li>
+              <li>ECMAScript is a standard and JavaScript is an implementation of this standard</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>History</h3>
+            <ul>
+              <li>ES1: June 1997</li>
+              <li>ES2: June 1998</li>
+              <li>ES3: Dec. 1999</li>
+              <li>ES4: Abandoned</li>
+              <li>ES5: Dec. 2009</li>
+              <li>ES6 || ES 2015: Jun. 2015</li>
+              <li>ES2016: June 2016</li>
+              <li>ES2017: June 2017</li>
+              <li>ES.next: dynamic reference to the next version</li>
+            </ul>
+          </section>
         </section>
-        
+
+
+
+        <section>
+          <section>
+            <h3>Hoisting</h3>
+              <p> JavaScript declared what needs space in memory to the top of scope.
+              </p>
+              <br>
+              <div>
+                  <img width="400" style="float:left" src="img/before_hoisting.png">
+                  <img width="400" style="float:right" src="img/after_hoisting.png">
+              <div>
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_function.png">
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_before.png">
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_after.png">
+            <p>Return random number between 11 to 20</p>
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_function_exp_before.png">
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_function_exp_after.png">
+            <p>Return random number between 1 to 10</p>
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_error_before.png">
+          </section>
+
+          <section>
+            <h3>Hoisting</h3>
+            <img width="600" src="img/random_error_after.png">
+            <p>Return an Error</p>
+          </section>
+
+          <section>
+            <h3>Hoisting Best Practice</h3>
+            <ul>
+              <li>Always use `var` or ...</li>
+              <li>Move the declaration to the top</li>
+              <li>Even in the global scope</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Loop optimization</h3>
+            <img width="600" src="img/loop1.png">
+          </section>
+
+          <section>
+            <h3>Loop optimization</h3>
+            <img width="600" src="img/loop2.png">
+          </section>
+
+          <section>
+            <h3>Loop optimization</h3>
+            <img width="600" src="img/loop3.png">
+          </section>
+
+          <section>
+            <h3>Loop optimization</h3>
+            <img width="600" src="img/loop4.png">
+          </section>
+
+          <section>
+            <h3>Loop optimization</h3>
+            <img width="600" src="img/loop5.png">
+            <p>Avoid to create a new var again and again!</p>
+          </section>
+
+        </section>
+
+
+
+        <section>
+          <section>
+            <h3>let</h3>
+            <ul>
+              <li>`let` variables are <bold>block-scoped</bold></li>
+              <li>Exist since ES6</li>
+            </ul>
+
+          </section>
+
+          <section>
+            <h3>let</h3>
+            <img width="600" src="img/let.png">
+          </section>
+
+          <section>
+            <h3>let</h3>
+            <img width="600" src="img/let.png">
+            <p>Return random number between 1 to 10</p>
+          </section>
+        </section>
+
+
+
+        <section>
+          <section>
+            <h3>const</h3>
+            <ul>
+              <li>`const` defends variable to be overwritten</li>
+              <li>const is <bold>block scoped</bold></li>
+              <li>`const` allow <bold>mutability</bold></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>const</h3>
+            <img width="600" src="img/const1.png">
+            <p>TypeError: Assignment to constant variable.</p>
+          </section>
+
+          <section>
+            <h3>const</h3>
+            <img width="600" src="img/const2.png">
+          </section>
+
+        </section>
+
+
+
+        <section>
+          <section>
+            <h3>Default parameters</h3>
+            <img width="600" src="img/default1.png">
+          </section>
+
+          <section>
+            <h3>Default parameters</h3>
+            <img width="600" src="img/default1.png">
+            <p>TypeError: Cannot read property 'join' of undefined</p>
+          </section>
+
+          <section>
+            <h3>Default parameters</h3>
+            <img width="600" src="img/default2.png">
+            <p>undefined</p>
+          </section>
+        </section>
+
+        <!-- 20 -->
+
+        <section>
+          <section>
+            <h3>Rest parameter</h3>
+            <ul>
+              <li>JavaScript allowed variable number of function parameters</li>
+              <li>The `arguments` variable is used to expose this</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Rest parameters</h3>
+            <img width="600" src="img/rest1.png">
+          </section>
+
+          <section>
+            <h3>Rest parameters</h3>
+            <img width="600" src="img/rest2.png">
+          </section>
+
+          <section>
+            <h3>Rest parameters</h3>
+            <img width="600" src="img/rest3.png">
+          </section>
+
+          <section>
+            <h3>Rest parameters</h3>
+            <img width="600" src="img/rest4.png">
+          </section>
+        </section>
+
+
+        <section>
+          <section>
+            <h3>Spread operator</h3>
+            <ul>
+              <li>Same appareance as the Rest parameter (...VarName)</li>
+              <li>Used to turn an Array of values into a comma separeted list of parameters</li>
+              <li>Rest operator only used in function parameters</li>
+              <li>Spread used in 3 different ways</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Spread operator</h3>
+            <img width="600" src="img/spread1.png">
+            <p>Turn an array in function parameters</p>
+          </section>
+
+          <section>
+            <h3>Spread operator</h3>
+            <img width="600" src="img/spread2.png">
+            <p>Declare an array with other array values</p>
+          </section>
+
+          <section>
+            <h3>Spread operator</h3>
+            <img width="600" src="img/spread3.png">
+            <p>Used in destructuring assignement</p>
+          </section>
+        </section>
+
         <!-- Thanks -->
         <section>
           <h2>Thanks!</h2>

@@ -1,4 +1,3 @@
-# my_reveal_template
-A really basic template for my reveal presentation.i
+# JavaScript Tips and Trick
 
-Presentation about: <a href="http://natacha-beck.github.io/my_reveal_template/#/" target="_blank">XXXX</a>.
+Presentation about: <a href="http://natacha-beck.github.io/js_tips_and_tricks/#/" target="_blank">JavaScript Tips and Tricks</a>.
