@@ -1,5 +1,5 @@
 
-// Example 1 hoisting
+// Example 1 hoisting (both example are equivalent)
 
 function doubleSumOfSquares(a,b){
   var x = add(a * a, b * b);
@@ -36,7 +36,7 @@ function randomElevenToTwenty(){
 }
 
 
-
+// Calling randomGenerator will return a number between 11 and 20 
 function randomGenerator(){
 
   function mysteryRandom(){
