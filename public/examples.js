@@ -65,7 +65,8 @@ function randomGenerator(){
 }
 
 // Example 3 with function expression
-
+// Both call are equivalent and will return a number between 1 to 10 
+// randomElevenToTwenty is unreachable
 function randomGenerator(){
 
   var mysteryRandom = function(){
@@ -91,14 +92,14 @@ function randomGenerator(){
 
   return mysteryRandom();
 
-  var mysteryRandom = function(){
+  mysteryRandom = function(){
     return randomElevenToTwenty();
   }
 
 }
 
 // Example 4
-
+// Both example are equivalent and will return TypeError
 function randomGenerator(){
 
   return mysteryRandom();
@@ -120,7 +121,7 @@ function randomGenerator(){
 
   return mysteryRandom();
 
-  mysteryRandom = function(){
+  var mysteryRandom = function(){
     return randomOneToTen();
   }
 
